@@ -138,3 +138,7 @@ cython_debug/
 # uv
 .uv/
 uv.lock
+
+# Data directory (generated files)
+data/*
+!data/.gitkeep

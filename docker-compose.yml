@@ -4,7 +4,10 @@ services:
     container_name: recallify-app
     volumes:
       - .:/app
+      - ./data:/app/data
     working_dir: /app
     command: uv run python src/main.py
     stdin_open: true
     tty: true
+    env_file:
+      - .env
