@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: recallify-app
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: uv run python src/main.py
+    stdin_open: true
+    tty: true
